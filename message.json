@@ -1,0 +1,8 @@
+{
+    "Account": {
+        "created":{
+            "message":"Account created!",
+            "status": 200
+        }
+    }
+}
