@@ -81,7 +81,7 @@ WSGI_APPLICATION = 'todo.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': config["DEBUG"],
+        'ENGINE': config["ENGINE"],
         'NAME': BASE_DIR / config['NAME'],
     }
 }
