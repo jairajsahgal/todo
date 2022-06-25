@@ -13,21 +13,21 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 from pathlib import Path
 from datetime import timedelta
 from rest_framework.settings import api_settings
-
+import os
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
-
+config = os.environ
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-+r8*ez+5s_rji3!+c!ph6l%-%zv+laeji((fbyau=1tp7ohw93'
+SECRET_KEY = config["SECRET_KEY"]
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = os.environ.get('DEBUG', '') != 'False'
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [config["ALLOWED_HOSTS"]]
 
 
 # Application definition
@@ -81,8 +81,8 @@ WSGI_APPLICATION = 'todo.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': config["DEBUG"],
+        'NAME': BASE_DIR / config['NAME'],
     }
 }
 
@@ -133,9 +133,10 @@ REST_FRAMEWORK = {
 
 REST_KNOX = {
   'SECURE_HASH_ALGORITHM': 'cryptography.hazmat.primitives.hashes.SHA512',
-  'AUTH_TOKEN_CHARACTER_LENGTH': 64,
-  'TOKEN_TTL': timedelta(hours=24),
+  'AUTH_TOKEN_CHARACTER_LENGTH': int(config["AUTH_TOKEN_CHARACTER_LENGTH"]),
+  'TOKEN_TTL': timedelta(hours=int(config["HOURS"])),
   'USER_SERIALIZER': 'knox.serializers.UserSerializer',
   'TOKEN_LIMIT_PER_USER': None,
-  'AUTO_REFRESH': False,
+  'AUTO_REFRESH': os.environ.get('AUTO_REFRESH', '') != 'False',
 }
+

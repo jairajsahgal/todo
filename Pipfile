@@ -9,6 +9,7 @@ djangorestframework = "*"
 markdown = "*"
 django-filter = "*"
 django-rest-knox = "*"
+numpy = "*"
 
 [dev-packages]
 
