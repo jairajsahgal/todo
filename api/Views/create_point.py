@@ -19,7 +19,7 @@ def create_point(request):
     request_data = request.data
     serializer = CustomPointSerializer(data=request_data)
     if serializer.is_valid():
-        note = Note.objects.filter(title=request_data["title"])
+        note = Note.objects.filter(account__user=request.user,title=request_data["title"])
         if note.exists():
             serializer = PointCreateSerializer(data=request_data)
             if serializer.is_valid(raise_exception=True):

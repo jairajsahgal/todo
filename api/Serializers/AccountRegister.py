@@ -20,7 +20,7 @@ class RegisterAccountSerializer(serializers.ModelSerializer):
             if User.objects.filter(Q(username=attrs.get('username')) | Q(email=attrs.get('email'))).exists():
                 msg = _("Account already exists!")
                 raise serializers.ValidationError(msg,code="Duplicate")
-            elif check_password(password=password):
+            elif not check_password(password=password):
                 msg = _("Password doesn't meet conditions")
                 raise serializers.ValidationError(msg,code="Unsecure Password")
             else:

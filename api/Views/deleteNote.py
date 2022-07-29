@@ -14,7 +14,7 @@ import json
 @permission_classes([IsAuthenticated])
 def deleteNote(request,title):
     try:
-        noteObject = Note.objects.get(title=title)
+        noteObject = Note.objects.filter(title=title)
         noteObject.delete()
         data = {
             "message":"Note Deleted",

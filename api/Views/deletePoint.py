@@ -18,7 +18,8 @@ def deletePoint(request,id):
     try:
         serializer = NoteGetSerializer(data=request_data)
         if serializer.is_valid(raise_exception=True):
-            noteObject = Note.objects.get(title=serializer.validated_data["title"])
+            print(serializer.validated_data["title"])
+            noteObject = Note.objects.get(account__user=request.user,title=serializer.validated_data["title"])
             pointObject = Point.objects.get(note=noteObject,id=id)
             pointObject.delete()
             data = {

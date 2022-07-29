@@ -1,0 +1,369 @@
+Watching for file changes with StatReloader
+OrderedDict([('title', 'something cooler')])
+"POST /api/create_note/ HTTP/1.1" 200 40
+"GET /api/all_todos/ HTTP/1.1" 200 5611
+/Users/jairajsahgal/Documents/django/todo/todo/api/Views/create_note.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+OrderedDict([('title', 'something cooler')])
+Internal Server Error: /api/create_note/
+Traceback (most recent call last):
+  File "/Users/jairajsahgal/miniforge3/envs/todoconda/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/jairajsahgal/miniforge3/envs/todoconda/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/jairajsahgal/miniforge3/envs/todoconda/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/jairajsahgal/miniforge3/envs/todoconda/lib/python3.9/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/jairajsahgal/miniforge3/envs/todoconda/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/jairajsahgal/miniforge3/envs/todoconda/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/jairajsahgal/miniforge3/envs/todoconda/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/jairajsahgal/miniforge3/envs/todoconda/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/jairajsahgal/miniforge3/envs/todoconda/lib/python3.9/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/Users/jairajsahgal/Documents/django/todo/todo/api/Views/create_note.py", line 22, in create_note
+    noteObject = Note.objects.get(account=a,title=serializer.data["title"])
+  File "/Users/jairajsahgal/miniforge3/envs/todoconda/lib/python3.9/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/jairajsahgal/miniforge3/envs/todoconda/lib/python3.9/site-packages/django/db/models/query.py", line 499, in get
+    raise self.model.MultipleObjectsReturned(
+api.Model.Account.Note.MultipleObjectsReturned: get() returned more than one Note -- it returned 7!
+"POST /api/create_note/ HTTP/1.1" 500 102424
+OrderedDict([('title', 'something cooler')])
+"POST /api/create_note/ HTTP/1.1" 200 40
+OrderedDict([('title', 'something cooler')])
+Bad Request: /api/create_note/
+"POST /api/create_note/ HTTP/1.1" 400 83
+"POST /api/create_point/ HTTP/1.1" 200 46
+"POST /api/create_point/ HTTP/1.1" 200 46
+"POST /api/create_point/ HTTP/1.1" 200 39
+"POST /api/create_point/ HTTP/1.1" 200 39
+"POST /api/create_point/ HTTP/1.1" 200 39
+"POST /api/create_point/ HTTP/1.1" 200 39
+"GET /api/all_todos/ HTTP/1.1" 200 400
+"POST /api/register/ HTTP/1.1" 200 43
+"POST /api/login/ HTTP/1.1" 200 183
+OrderedDict([('title', 'something cooler')])
+"POST /api/create_note/ HTTP/1.1" 200 40
+OrderedDict([('title', 'something cooler')])
+Bad Request: /api/create_note/
+"POST /api/create_note/ HTTP/1.1" 400 83
+"POST /api/create_point/ HTTP/1.1" 200 39
+"POST /api/create_point/ HTTP/1.1" 200 39
+"POST /api/create_point/ HTTP/1.1" 200 39
+"POST /api/create_point/ HTTP/1.1" 200 39
+"POST /api/create_point/ HTTP/1.1" 200 39
+"POST /api/create_point/ HTTP/1.1" 200 39
+"POST /api/create_point/ HTTP/1.1" 200 39
+"POST /api/create_point/ HTTP/1.1" 200 39
+"POST /api/create_point/ HTTP/1.1" 200 39
+"POST /api/point_ocr/ HTTP/1.1" 200 372
+"GET /api/all_todos/ HTTP/1.1" 200 437
+OrderedDict([('title', 'something cooler is a cool')])
+"POST /api/create_note/ HTTP/1.1" 200 40
+"POST /api/create_point/ HTTP/1.1" 200 39
+"POST /api/create_point/ HTTP/1.1" 200 39
+"GET /api/all_todos/ HTTP/1.1" 200 636
+Bad Request: /api/delete_note/shh/
+"DELETE /api/delete_note/shh/ HTTP/1.1" 400 46
+"DELETE /api/delete_note/something%20cooler%20is%20a%20cool/ HTTP/1.1" 200 39
+Bad Request: /api/delete_point/1/
+"DELETE /api/delete_point/1/ HTTP/1.1" 400 47
+Bad Request: /api/delete_point/1/
+"DELETE /api/delete_point/1/ HTTP/1.1" 400 47
+Bad Request: /api/delete_point/1/
+"DELETE /api/delete_point/1/ HTTP/1.1" 400 47
+/Users/jairajsahgal/Documents/django/todo/todo/api/Views/deletePoint.py changed, reloading.
+Bad Request: /api/delete_point/1/
+"DELETE /api/delete_point/1/ HTTP/1.1" 400 47
+Watching for file changes with StatReloader
+Bad Request: /api/delete_point/1/
+"DELETE /api/delete_point/1/ HTTP/1.1" 400 47
+/Users/jairajsahgal/Documents/django/todo/todo/api/Views/deletePoint.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/jairajsahgal/Documents/django/todo/todo/api/Views/deletePoint.py changed, reloading.
+Watching for file changes with StatReloader
+Bad Request: /api/delete_point/1/
+"DELETE /api/delete_point/1/ HTTP/1.1" 400 47
+"GET /api/all_todos/ HTTP/1.1" 200 437
+"POST /api/register/ HTTP/1.1" 200 43
+"POST /api/login/ HTTP/1.1" 200 183
+OrderedDict([('title', 'something cooler is a cool')])
+"POST /api/create_note/ HTTP/1.1" 200 40
+OrderedDict([('title', 'something cooler is a cool')])
+Bad Request: /api/create_note/
+"POST /api/create_note/ HTTP/1.1" 400 93
+OrderedDict([('title', 'something cooler is a coolest')])
+"POST /api/create_note/ HTTP/1.1" 200 40
+"POST /api/create_point/ HTTP/1.1" 200 39
+"POST /api/create_point/ HTTP/1.1" 200 39
+"POST /api/create_point/ HTTP/1.1" 200 39
+"POST /api/create_point/ HTTP/1.1" 200 39
+"POST /api/create_point/ HTTP/1.1" 200 39
+"POST /api/point_ocr/ HTTP/1.1" 200 372
+"GET /api/all_todos/ HTTP/1.1" 200 902
+"DELETE /api/delete_note/something%20cooler%20is%20a%20cool/ HTTP/1.1" 200 39
+Bad Request: /api/delete_point/1/
+"DELETE /api/delete_point/1/ HTTP/1.1" 400 48
+Internal Server Error: /api/delete_point/Something cool is mint/
+Traceback (most recent call last):
+  File "/Users/jairajsahgal/miniforge3/envs/todoconda/lib/python3.9/site-packages/django/db/models/fields/__init__.py", line 1988, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: 'Something cool is mint'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/jairajsahgal/miniforge3/envs/todoconda/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/jairajsahgal/miniforge3/envs/todoconda/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/jairajsahgal/miniforge3/envs/todoconda/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/jairajsahgal/miniforge3/envs/todoconda/lib/python3.9/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/jairajsahgal/miniforge3/envs/todoconda/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/jairajsahgal/miniforge3/envs/todoconda/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/jairajsahgal/miniforge3/envs/todoconda/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/jairajsahgal/miniforge3/envs/todoconda/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/jairajsahgal/miniforge3/envs/todoconda/lib/python3.9/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/Users/jairajsahgal/Documents/django/todo/todo/api/Views/deletePoint.py", line 23, in deletePoint
+    pointObject = Point.objects.get(note=noteObject,id=id)
+  File "/Users/jairajsahgal/miniforge3/envs/todoconda/lib/python3.9/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/jairajsahgal/miniforge3/envs/todoconda/lib/python3.9/site-packages/django/db/models/query.py", line 482, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+  File "/Users/jairajsahgal/miniforge3/envs/todoconda/lib/python3.9/site-packages/django/db/models/query.py", line 1071, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "/Users/jairajsahgal/miniforge3/envs/todoconda/lib/python3.9/site-packages/django/db/models/query.py", line 1089, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/Users/jairajsahgal/miniforge3/envs/todoconda/lib/python3.9/site-packages/django/db/models/query.py", line 1096, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/Users/jairajsahgal/miniforge3/envs/todoconda/lib/python3.9/site-packages/django/db/models/sql/query.py", line 1502, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/Users/jairajsahgal/miniforge3/envs/todoconda/lib/python3.9/site-packages/django/db/models/sql/query.py", line 1532, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/Users/jairajsahgal/miniforge3/envs/todoconda/lib/python3.9/site-packages/django/db/models/sql/query.py", line 1448, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/Users/jairajsahgal/miniforge3/envs/todoconda/lib/python3.9/site-packages/django/db/models/sql/query.py", line 1273, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "/Users/jairajsahgal/miniforge3/envs/todoconda/lib/python3.9/site-packages/django/db/models/lookups.py", line 27, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "/Users/jairajsahgal/miniforge3/envs/todoconda/lib/python3.9/site-packages/django/db/models/lookups.py", line 85, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+  File "/Users/jairajsahgal/miniforge3/envs/todoconda/lib/python3.9/site-packages/django/db/models/fields/__init__.py", line 1990, in get_prep_value
+    raise e.__class__(
+ValueError: Field 'id' expected a number but got 'Something cool is mint'.
+"DELETE /api/delete_point/Something%20cool%20is%20mint/ HTTP/1.1" 500 156930
+Bad Request: /api/delete_point/33/
+"DELETE /api/delete_point/33/ HTTP/1.1" 400 48
+Bad Request: /api/delete_point/33/
+"DELETE /api/delete_point/33/ HTTP/1.1" 400 48
+"DELETE /api/delete_point/30/ HTTP/1.1" 200 40
+"POST /api/register/ HTTP/1.1" 200 43
+Bad Request: /api/register/
+"POST /api/register/ HTTP/1.1" 400 111
+"POST /api/login/ HTTP/1.1" 200 183
+OrderedDict([('title', 'something cooler is a coolest')])
+"POST /api/create_note/ HTTP/1.1" 200 40
+OrderedDict([('title', 'something')])
+"POST /api/create_note/ HTTP/1.1" 200 40
+OrderedDict([('title', 'something')])
+Bad Request: /api/create_note/
+"POST /api/create_note/ HTTP/1.1" 400 76
+"POST /api/create_point/ HTTP/1.1" 200 39
+"POST /api/create_point/ HTTP/1.1" 200 39
+"POST /api/create_point/ HTTP/1.1" 200 39
+"POST /api/create_point/ HTTP/1.1" 200 39
+"GET /api/all_todos/ HTTP/1.1" 200 264
+Internal Server Error: /api/delete_note/something cooler is a coolest/
+Traceback (most recent call last):
+  File "/Users/jairajsahgal/miniforge3/envs/todoconda/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/jairajsahgal/miniforge3/envs/todoconda/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/jairajsahgal/miniforge3/envs/todoconda/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/jairajsahgal/miniforge3/envs/todoconda/lib/python3.9/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/jairajsahgal/miniforge3/envs/todoconda/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/jairajsahgal/miniforge3/envs/todoconda/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/jairajsahgal/miniforge3/envs/todoconda/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/jairajsahgal/miniforge3/envs/todoconda/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/jairajsahgal/miniforge3/envs/todoconda/lib/python3.9/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/Users/jairajsahgal/Documents/django/todo/todo/api/Views/deleteNote.py", line 17, in deleteNote
+    noteObject = Note.objects.get(title=title)
+  File "/Users/jairajsahgal/miniforge3/envs/todoconda/lib/python3.9/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/jairajsahgal/miniforge3/envs/todoconda/lib/python3.9/site-packages/django/db/models/query.py", line 499, in get
+    raise self.model.MultipleObjectsReturned(
+api.Model.Account.Note.MultipleObjectsReturned: get() returned more than one Note -- it returned 2!
+"DELETE /api/delete_note/something%20cooler%20is%20a%20coolest/ HTTP/1.1" 500 102054
+"DELETE /api/delete_point/36/ HTTP/1.1" 200 40
+/Users/jairajsahgal/Documents/django/todo/todo/api/Views/deleteNote.py changed, reloading.
+Watching for file changes with StatReloader
+"POST /api/register/ HTTP/1.1" 200 43
+Bad Request: /api/register/
+"POST /api/register/ HTTP/1.1" 400 111
+"POST /api/login/ HTTP/1.1" 200 183
+OrderedDict([('title', 'something')])
+"POST /api/create_note/ HTTP/1.1" 200 40
+OrderedDict([('title', 'something_good')])
+"POST /api/create_note/ HTTP/1.1" 200 40
+OrderedDict([('title', 'something_good')])
+Bad Request: /api/create_note/
+"POST /api/create_note/ HTTP/1.1" 400 81
+"DELETE /api/delete_note/something_good/ HTTP/1.1" 200 39
+"GET /api/all_todos/ HTTP/1.1" 200 58
+"POST /api/create_point/ HTTP/1.1" 200 39
+"POST /api/create_point/ HTTP/1.1" 200 39
+"GET /api/all_todos/ HTTP/1.1" 200 58
+"POST /api/create_point/ HTTP/1.1" 200 39
+"GET /api/all_todos/ HTTP/1.1" 200 58
+"POST /api/create_point/ HTTP/1.1" 200 39
+OrderedDict([('title', 'something_good')])
+"POST /api/create_note/ HTTP/1.1" 200 40
+OrderedDict([('title', 'something_good')])
+Bad Request: /api/create_note/
+"POST /api/create_note/ HTTP/1.1" 400 81
+OrderedDict([('title', 'something_good')])
+Bad Request: /api/create_note/
+"POST /api/create_note/ HTTP/1.1" 400 81
+OrderedDict([('title', 'something_good')])
+Bad Request: /api/create_note/
+"POST /api/create_note/ HTTP/1.1" 400 81
+OrderedDict([('title', 'something_good')])
+Bad Request: /api/create_note/
+"POST /api/create_note/ HTTP/1.1" 400 81
+OrderedDict([('title', 'something_good')])
+Bad Request: /api/create_note/
+"POST /api/create_note/ HTTP/1.1" 400 81
+/Users/jairajsahgal/Documents/django/todo/todo/api/Serializers/NoteDetailSerializer.py changed, reloading.
+Watching for file changes with StatReloader
+"POST /api/login/ HTTP/1.1" 200 183
+Bad Request: /api/create_note/
+"POST /api/create_note/ HTTP/1.1" 400 81
+"POST /api/create_note/ HTTP/1.1" 200 40
+Bad Request: /api/create_note/
+"POST /api/create_note/ HTTP/1.1" 400 81
+Bad Request: /api/create_note/
+"POST /api/create_note/ HTTP/1.1" 400 81
+Bad Request: /api/create_note/
+"POST /api/create_note/ HTTP/1.1" 400 81
+Bad Request: /api/create_note/
+"POST /api/create_note/ HTTP/1.1" 400 81
+Bad Request: /api/create_note/
+"POST /api/create_note/ HTTP/1.1" 400 81
+Bad Request: /api/create_note/
+"POST /api/create_note/ HTTP/1.1" 400 81
+Bad Request: /api/create_note/
+"POST /api/create_note/ HTTP/1.1" 400 81
+Bad Request: /api/create_note/
+"POST /api/create_note/ HTTP/1.1" 400 81
+Bad Request: /api/create_note/
+"POST /api/create_note/ HTTP/1.1" 400 81
+"POST /api/create_point/ HTTP/1.1" 200 39
+"POST /api/create_point/ HTTP/1.1" 200 39
+"GET /api/all_todos/ HTTP/1.1" 200 78
+"POST /api/create_point/ HTTP/1.1" 200 39
+"GET /api/all_todos/ HTTP/1.1" 200 78
+/Users/jairajsahgal/Documents/django/todo/todo/api/Views/all_todos.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /api/all_todos/ HTTP/1.1" 200 700
+"POST /api/register/ HTTP/1.1" 200 43
+"POST /api/register/ HTTP/1.1" 200 43
+"POST /api/login/ HTTP/1.1" 200 183
+"POST /api/create_note/ HTTP/1.1" 200 40
+Bad Request: /api/create_note/
+"POST /api/create_note/ HTTP/1.1" 400 81
+"POST /api/create_point/ HTTP/1.1" 200 39
+"POST /api/create_point/ HTTP/1.1" 200 39
+"POST /api/point_ocr/ HTTP/1.1" 200 372
+"GET /api/all_todos/ HTTP/1.1" 200 1221
+"DELETE /api/delete_note/something_good/ HTTP/1.1" 200 39
+"GET /api/all_todos/ HTTP/1.1" 200 1129
+Bad Request: /api/delete_point/25/
+"DELETE /api/delete_point/25/ HTTP/1.1" 400 47
+Bad Request: /api/delete_point/25/
+"DELETE /api/delete_point/25/ HTTP/1.1" 400 47
+Bad Request: /api/delete_point/33/
+"DELETE /api/delete_point/33/ HTTP/1.1" 400 47
+"GET /api/all_todos/ HTTP/1.1" 200 1129
+"GET /api/all_todos/ HTTP/1.1" 200 1129
+"POST /api/point_ocr/ HTTP/1.1" 200 372
+"GET /api/all_todos/ HTTP/1.1" 200 1486
+Bad Request: /api/delete_point/48/
+"DELETE /api/delete_point/48/ HTTP/1.1" 400 47
+Bad Request: /api/delete_point/48/
+"DELETE /api/delete_point/48/ HTTP/1.1" 400 47
+Bad Request: /api/delete_point/48/
+"DELETE /api/delete_point/48/ HTTP/1.1" 400 47
+Bad Request: /api/delete_point/48/
+"DELETE /api/delete_point/48/ HTTP/1.1" 400 47
+"POST /api/register/ HTTP/1.1" 200 43
+"POST /api/login/ HTTP/1.1" 200 183
+"GET /api/all_todos/ HTTP/1.1" 200 39
+"POST /api/create_note/ HTTP/1.1" 200 40
+"POST /api/create_point/ HTTP/1.1" 200 39
+"POST /api/create_point/ HTTP/1.1" 200 39
+"POST /api/create_point/ HTTP/1.1" 200 39
+"POST /api/create_point/ HTTP/1.1" 200 39
+"POST /api/create_point/ HTTP/1.1" 200 39
+"GET /api/all_todos/ HTTP/1.1" 200 63
+/Users/jairajsahgal/Documents/django/todo/todo/api/Views/create_point.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/jairajsahgal/Documents/django/todo/todo/api/Views/create_point.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /api/all_todos/ HTTP/1.1" 200 63
+"GET /api/all_todos/ HTTP/1.1" 200 63
+"POST /api/create_point/ HTTP/1.1" 200 46
+"POST /api/create_point/ HTTP/1.1" 200 46
+Bad Request: /api/register/
+"POST /api/register/ HTTP/1.1" 400 111
+Bad Request: /api/register/
+"POST /api/register/ HTTP/1.1" 400 53
+"POST /api/register/ HTTP/1.1" 200 43
+"POST /api/login/ HTTP/1.1" 200 183
+"GET /api/all_todos/ HTTP/1.1" 200 39
+"POST /api/create_note/ HTTP/1.1" 200 40
+Bad Request: /api/create_note/
+"POST /api/create_note/ HTTP/1.1" 400 81
+"POST /api/create_point/ HTTP/1.1" 200 46
+"POST /api/create_point/ HTTP/1.1" 200 39
+"POST /api/create_point/ HTTP/1.1" 200 39
+"POST /api/point_ocr/ HTTP/1.1" 200 372
+"GET /api/all_todos/ HTTP/1.1" 200 2009
+"DELETE /api/delete_note/something_good/ HTTP/1.1" 200 39
+"POST /api/create_note/ HTTP/1.1" 200 40
+"GET /api/all_todos/ HTTP/1.1" 200 1863
+"POST /api/create_point/ HTTP/1.1" 200 39
+"GET /api/all_todos/ HTTP/1.1" 200 1936
+"DELETE /api/delete_point/57/ HTTP/1.1" 200 40
+"POST /api/create_point/ HTTP/1.1" 200 39
+"POST /api/point_ocr/ HTTP/1.1" 200 372
+"GET /api/all_todos/ HTTP/1.1" 200 2293
+"POST /api/register/ HTTP/1.1" 200 43
+"POST /api/login/ HTTP/1.1" 200 183
+"GET /api/all_todos/ HTTP/1.1" 200 39
+"POST /api/point_ocr/ HTTP/1.1" 200 372
+"GET /api/all_todos/ HTTP/1.1" 200 2557
+/Users/jairajsahgal/Documents/django/todo/todo/api/Views/all_todos.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /api/all_todos/ HTTP/1.1" 200 415
+"GET /api/all_todos/ HTTP/1.1" 200 415

@@ -2,7 +2,7 @@ from rest_framework.decorators import api_view
 from rest_framework.response import Response
 
 from rest_framework import status
-from api.Model.Account import Account, Note
+from api.Model.Account import Account, Note, Point
 
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.decorators import permission_classes
@@ -24,7 +24,7 @@ def getTodos(request):
         details = dict()
         for note in notesObject:
             details[note.title]=None
-            pointObjects = note.point_set.all()
+            pointObjects = Point.objects.filter(note=note)
             serializer = PointDetailSerializer(instance=pointObjects,many=True)
             details[note.title]=serializer.data
         data = {

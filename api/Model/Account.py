@@ -12,7 +12,7 @@ class Note(models.Model):
     account = models.ForeignKey(to=Account,on_delete=models.CASCADE)
     created = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)
-    title = models.CharField(max_length=100,blank=False,null=False,unique=True)
+    title = models.CharField(max_length=100,blank=False,null=False)
 
 
 class Point(models.Model):
