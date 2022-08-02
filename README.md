@@ -13,3 +13,6 @@
 * Add support for image in points.
 * A method to export all your todos to a json file for importing into other todo apps.
 * Email reminder and Forgot password.
+
+# Output
+![Working of program](https://github.com/jairajsahgal/todo/blob/Development/2022-07-31-19-30-01.gif?raw=true)
